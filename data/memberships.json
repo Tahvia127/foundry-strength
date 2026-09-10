@@ -1,0 +1,15 @@
+{
+  "annualDiscount": 0.15,
+  "tiers": [
+    { "name": "Drop-in", "monthly": 28, "unit": "per class", "oneOff": true,
+      "note": "No commitment. Book any class with a space.",
+      "includes": ["Any single class", "Free first session", "No sign-up fee"] },
+    { "name": "Eight a month", "monthly": 148,
+      "note": "Two classes a week, which is where most people actually land.",
+      "includes": ["8 classes each month", "Book 7 days ahead", "Two guest passes a year", "Pause once a year, free"] },
+    { "name": "Unlimited", "monthly": 199, "featured": true,
+      "note": "Every class, plus open gym whenever the floor is free.",
+      "includes": ["Every class, every day", "Open gym access", "Book 14 days ahead", "Free programme review each quarter", "Pause any time, free"] }
+  ],
+  "terms": "Memberships are month to month. Cancel any time with thirty days' notice. No joining fee, no annual contract."
+}

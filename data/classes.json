@@ -1,0 +1,13 @@
+{
+  "note": "Class types. The schedule references these by id.",
+  "types": [
+    { "id": "strength", "name": "Barbell Strength", "image": "cls-strength", "level": "All levels", "mins": 60,
+      "blurb": "Squat, press, deadlift. Linear progression with a coach checking every rep. If you have never touched a barbell, start here." },
+    { "id": "condition", "name": "Conditioning", "image": "cls-condition", "level": "Intermediate", "mins": 45,
+      "blurb": "Intervals, sleds, ropes and carries. Hard for forty-five minutes, then you go home. Scaled every session." },
+    { "id": "mat", "name": "Mat & Mobility", "image": "cls-mat", "level": "All levels", "mins": 50,
+      "blurb": "Controlled work for hips, shoulders and the mid-back. The class that keeps the other two available to you." },
+    { "id": "cycle", "name": "Row & Ride", "image": "cls-cycle", "level": "All levels", "mins": 45,
+      "blurb": "Rower and bike intervals with a screen you can ignore. Low impact, high effort, easy on the knees." }
+  ]
+}

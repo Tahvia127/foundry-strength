@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foundry Strength &amp; Conditioning | Chicago</title>
+<meta name="description" content="A coached strength gym in Pilsen.">
+<meta property="og:title" content="Foundry — Strength &amp; Conditioning">
+<meta property="og:description" content="A coached strength gym in Pilsen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ExerciseGym","name":"Foundry Strength & Conditioning","description":"A coached strength gym in Pilsen. Small classes, real barbells, and a coach who knows your name and your last set. No mirrors wall, no contracts you cannot leave.","telephone":"(555) 555-0193","email":"hello@foundrystrength.example","address":{"@type":"PostalAddress","streetAddress":"1820 S Halsted St","addressLocality":"Chicago"}}</script>
+</head>
+<body>
+<a class="skip" href="#schedule">Skip to the schedule</a>
+<div class="demo-bar" role="note"><p>Demo site. Foundry is a fictional gym, built to show what a small-business site can do.</p><span class="sep">&middot;</span>
+  <a href="https://tahvia127.github.io/framework-studio/" target="_blank" rel="noopener noreferrer">Made by Framework Studio</a></div>
+
+<header class="nav" id="nav"><div class="shell">
+  <a class="logo" href="#top">Found<span>ry</span></a>
+  <nav aria-label="Primary"><ul>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#membership">Membership</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul></nav>
+  <a class="btn fill" href="#visit">Free first class</a>
+</div></header>
+
+<header class="hero" id="top">
+  <img src="assets/img/hero.webp" alt="" width="1600" height="1067" fetchpriority="high">
+  <div class="inner"><div class="shell">
+    <p class="eyebrow">Strength &amp; Conditioning &middot; Chicago</p>
+    <h1>Show up. Get coached. Get strong.</h1>
+    <p>A coached strength gym in Pilsen. Small classes, real barbells, and a coach who knows your name and your last set. No mirrors wall, no contracts you cannot leave.</p>
+    <div class="cta">
+      <a class="btn flame" href="#visit">Book a free first class</a>
+      <a class="btn light" href="#schedule">See the schedule</a>
+    </div>
+  </div></div>
+</header>
+
+<main>
+
+<section class="section" id="classes"><div class="shell">
+  <div class="head rv">
+    <p class="eyebrow">What we run</p>
+    <h2>Four classes, capped at 16</h2>
+    <p>Every session is coached start to finish. Small enough that someone corrects your setup before it becomes a habit.</p>
+  </div>
+  <div class="cls-grid">
+      <article class="cls rv" style="--i:0">
+        <img src="assets/img/cls-strength.webp" alt="Barbell Strength" loading="lazy" width="900" height="1050">
+        <div class="cap">
+          <p class="meta">All levels &middot; 60 min</p>
+          <h3>Barbell Strength</h3>
+          <p>Squat, press, deadlift. Linear progression with a coach checking every rep. If you have never touched a barbell, start here.</p>
+        </div>
+      </article>
+      <article class="cls rv" style="--i:1">
+        <img src="assets/img/cls-condition.webp" alt="Conditioning" loading="lazy" width="900" height="1050">
+        <div class="cap">
+          <p class="meta">Intermediate &middot; 45 min</p>
+          <h3>Conditioning</h3>
+          <p>Intervals, sleds, ropes and carries. Hard for forty-five minutes, then you go home. Scaled every session.</p>
+        </div>
+      </article>
+      <article class="cls rv" style="--i:2">
+        <img src="assets/img/cls-mat.webp" alt="Mat &amp; Mobility" loading="lazy" width="900" height="1050">
+        <div class="cap">
+          <p class="meta">All levels &middot; 50 min</p>
+          <h3>Mat &amp; Mobility</h3>
+          <p>Controlled work for hips, shoulders and the mid-back. The class that keeps the other two available to you.</p>
+        </div>
+      </article>
+      <article class="cls rv" style="--i:3">
+        <img src="assets/img/cls-cycle.webp" alt="Row &amp; Ride" loading="lazy" width="900" height="1050">
+        <div class="cap">
+          <p class="meta">All levels &middot; 45 min</p>
+          <h3>Row &amp; Ride</h3>
+          <p>Rower and bike intervals with a screen you can ignore. Low impact, high effort, easy on the knees.</p>
+        </div>
+      </article></div>
+</div></section>
+
+<section class="section section-alt" id="schedule"><div class="shell">
+  <div class="head rv">
+    <p class="eyebrow">This week</p>
+    <h2>The schedule</h2>
+    <p>24 sessions a week. Filter by class, and check spots before you come down.</p>
+  </div>
+  <div class="sched-bar rv" role="group" aria-label="Filter the schedule by class">
+    <button class="fbtn" type="button" data-f="" aria-pressed="true">All classes</button><button class="fbtn" type="button" data-f="strength" aria-pressed="false">Barbell Strength</button><button class="fbtn" type="button" data-f="condition" aria-pressed="false">Conditioning</button><button class="fbtn" type="button" data-f="mat" aria-pressed="false">Mat &amp; Mobility</button><button class="fbtn" type="button" data-f="cycle" aria-pressed="false">Row &amp; Ride</button>
+    <span class="sched-count" id="schedCount" aria-live="polite"></span>
+  </div>
+  <div class="week">
+        <div class="day">
+          <h4>Monday</h4>
+          <ul>
+            <li class="sess" data-c="strength">
+              <span class="tm">6:00 am</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp low">3 spots</span>
+            </li>
+            <li class="sess" data-c="condition">
+              <span class="tm">12:00 pm</span>
+              <span class="nm">Conditioning</span>
+              <span class="co">Marcus &middot; 45 min</span>
+              <span class="sp open">7 spots</span>
+            </li>
+            <li class="sess" data-c="strength">
+              <span class="tm">5:30 pm</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp full">Full</span>
+            </li>
+            <li class="sess" data-c="mat">
+              <span class="tm">6:45 pm</span>
+              <span class="nm">Mat &amp; Mobility</span>
+              <span class="co">Priya &middot; 50 min</span>
+              <span class="sp open">5 spots</span>
+            </li>
+          </ul>
+          <p class="none" hidden>Nothing on</p>
+        </div>
+        <div class="day">
+          <h4>Tuesday</h4>
+          <ul>
+            <li class="sess" data-c="condition">
+              <span class="tm">6:00 am</span>
+              <span class="nm">Conditioning</span>
+              <span class="co">Marcus &middot; 45 min</span>
+              <span class="sp open">6 spots</span>
+            </li>
+            <li class="sess" data-c="mat">
+              <span class="tm">9:30 am</span>
+              <span class="nm">Mat &amp; Mobility</span>
+              <span class="co">Priya &middot; 50 min</span>
+              <span class="sp open">9 spots</span>
+            </li>
+            <li class="sess" data-c="cycle">
+              <span class="tm">5:30 pm</span>
+              <span class="nm">Row &amp; Ride</span>
+              <span class="co">Dev &middot; 45 min</span>
+              <span class="sp low">2 spots</span>
+            </li>
+            <li class="sess" data-c="strength">
+              <span class="tm">6:45 pm</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp low">1 spot left</span>
+            </li>
+          </ul>
+          <p class="none" hidden>Nothing on</p>
+        </div>
+        <div class="day">
+          <h4>Wednesday</h4>
+          <ul>
+            <li class="sess" data-c="strength">
+              <span class="tm">6:00 am</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp open">4 spots</span>
+            </li>
+            <li class="sess" data-c="cycle">
+              <span class="tm">12:00 pm</span>
+              <span class="nm">Row &amp; Ride</span>
+              <span class="co">Dev &middot; 45 min</span>
+              <span class="sp open">8 spots</span>
+            </li>
+            <li class="sess" data-c="condition">
+              <span class="tm">5:30 pm</span>
+              <span class="nm">Conditioning</span>
+              <span class="co">Marcus &middot; 45 min</span>
+              <span class="sp full">Full</span>
+            </li>
+            <li class="sess" data-c="strength">
+              <span class="tm">6:45 pm</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp low">2 spots</span>
+            </li>
+          </ul>
+          <p class="none" hidden>Nothing on</p>
+        </div>
+        <div class="day">
+          <h4>Thursday</h4>
+          <ul>
+            <li class="sess" data-c="mat">
+              <span class="tm">6:00 am</span>
+              <span class="nm">Mat &amp; Mobility</span>
+              <span class="co">Priya &middot; 50 min</span>
+              <span class="sp open">11 spots</span>
+            </li>
+            <li class="sess" data-c="condition">
+              <span class="tm">12:00 pm</span>
+              <span class="nm">Conditioning</span>
+              <span class="co">Marcus &middot; 45 min</span>
+              <span class="sp open">5 spots</span>
+            </li>
+            <li class="sess" data-c="strength">
+              <span class="tm">5:30 pm</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp low">3 spots</span>
+            </li>
+            <li class="sess" data-c="cycle">
+              <span class="tm">6:45 pm</span>
+              <span class="nm">Row &amp; Ride</span>
+              <span class="co">Dev &middot; 45 min</span>
+              <span class="sp open">6 spots</span>
+            </li>
+          </ul>
+          <p class="none" hidden>Nothing on</p>
+        </div>
+        <div class="day">
+          <h4>Friday</h4>
+          <ul>
+            <li class="sess" data-c="strength">
+              <span class="tm">6:00 am</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp open">5 spots</span>
+            </li>
+            <li class="sess" data-c="mat">
+              <span class="tm">12:00 pm</span>
+              <span class="nm">Mat &amp; Mobility</span>
+              <span class="co">Priya &middot; 50 min</span>
+              <span class="sp open">10 spots</span>
+            </li>
+            <li class="sess" data-c="condition">
+              <span class="tm">5:30 pm</span>
+              <span class="nm">Conditioning</span>
+              <span class="co">Marcus &middot; 45 min</span>
+              <span class="sp open">4 spots</span>
+            </li>
+          </ul>
+          <p class="none" hidden>Nothing on</p>
+        </div>
+        <div class="day">
+          <h4>Saturday</h4>
+          <ul>
+            <li class="sess" data-c="condition">
+              <span class="tm">8:00 am</span>
+              <span class="nm">Conditioning</span>
+              <span class="co">Marcus &middot; 45 min</span>
+              <span class="sp full">Full</span>
+            </li>
+            <li class="sess" data-c="strength">
+              <span class="tm">9:15 am</span>
+              <span class="nm">Barbell Strength</span>
+              <span class="co">Nia &middot; 60 min</span>
+              <span class="sp low">2 spots</span>
+            </li>
+            <li class="sess" data-c="mat">
+              <span class="tm">10:30 am</span>
+              <span class="nm">Mat &amp; Mobility</span>
+              <span class="co">Priya &middot; 50 min</span>
+              <span class="sp open">7 spots</span>
+            </li>
+          </ul>
+          <p class="none" hidden>Nothing on</p>
+        </div>
+        <div class="day">
+          <h4>Sunday</h4>
+          <ul>
+            <li class="sess" data-c="mat">
+              <span class="tm">9:00 am</span>
+              <span class="nm">Mat &amp; Mobility</span>
+              <span class="co">Priya &middot; 50 min</span>
+              <span class="sp open">12 spots</span>
+            </li>
+            <li class="sess" data-c="cycle">
+              <span class="tm">10:15 am</span>
+              <span class="nm">Row &amp; Ride</span>
+              <span class="co">Dev &middot; 45 min</span>
+              <span class="sp open">9 spots</span>
+            </li>
+          </ul>
+          <p class="none" hidden>Nothing on</p>
+        </div></div>
+</div></section>
+
+<section class="section"><div class="shell split">
+  <div class="im rv"><img src="assets/img/about.webp" alt="" loading="lazy" width="1100" height="935"></div>
+  <div class="rv">
+    <p class="eyebrow">How it works</p>
+    <h2>Coached, not supervised</h2>
+    <p>There is a difference between a gym with staff and a gym with coaches. Here someone writes your programme, watches you lift it, and changes it when it stops working.</p>
+    <p>Your first class is free and there is no sales conversation afterwards. Come to one, see whether you like the room, and decide then.</p>
+    <a class="btn" href="#visit">Book your first class</a>
+  </div>
+</div></section>
+
+<section class="section section-alt" id="membership"><div class="shell">
+  <div class="head rv">
+    <p class="eyebrow">Membership</p>
+    <h2>Pick how often you'll actually come</h2>
+    <p>Most people overbuy. If you are honest about two sessions a week, the eight-a-month plan is cheaper than unlimited and you will not feel guilty.</p>
+  </div>
+  <div class="toggle rv" role="group" aria-label="Billing period">
+    <button type="button" data-p="monthly" aria-pressed="true">Monthly</button>
+    <button type="button" data-p="annual" aria-pressed="false">Annual &middot; save 15%</button>
+  </div>
+  <div class="tiers">
+      <article class="tier rv" data-monthly="28" data-oneoff="1">
+        
+        <h3>Drop-in</h3>
+        <p class="pr">$<span class="amt">28</span></p>
+        <p class="unit">per class</p>
+        <p class="save"></p>
+        <p class="nt">No commitment. Book any class with a space.</p>
+        <ul><li>Any single class</li><li>Free first session</li><li>No sign-up fee</li></ul>
+        <a class="btn " href="#visit">Book a class</a>
+      </article>
+      <article class="tier rv" data-monthly="148">
+        
+        <h3>Eight a month</h3>
+        <p class="pr">$<span class="amt">148</span></p>
+        <p class="unit">per month</p>
+        <p class="save"></p>
+        <p class="nt">Two classes a week, which is where most people actually land.</p>
+        <ul><li>8 classes each month</li><li>Book 7 days ahead</li><li>Two guest passes a year</li><li>Pause once a year, free</li></ul>
+        <a class="btn " href="#visit">Join</a>
+      </article>
+      <article class="tier rv f" data-monthly="199">
+        <span class="flag">Most members</span>
+        <h3>Unlimited</h3>
+        <p class="pr">$<span class="amt">199</span></p>
+        <p class="unit">per month</p>
+        <p class="save"></p>
+        <p class="nt">Every class, plus open gym whenever the floor is free.</p>
+        <ul><li>Every class, every day</li><li>Open gym access</li><li>Book 14 days ahead</li><li>Free programme review each quarter</li><li>Pause any time, free</li></ul>
+        <a class="btn flame" href="#visit">Join</a>
+      </article></div>
+  <p class="terms">Memberships are month to month. Cancel any time with thirty days' notice. No joining fee, no annual contract.</p>
+</div></section>
+
+<section class="section dark" id="visit"><div class="shell">
+  <div class="head rv"><p class="eyebrow">Visit</p><h2>Come down</h2>
+    <p>First class is free, no card needed. Turn up ten minutes early and someone will show you round.</p></div>
+  <div class="info">
+    <div class="rv"><h4>Where</h4><p>1820 S Halsted St<br>Chicago, IL 60608</p></div>
+    <div class="rv"><h4>Reach us</h4><p><a href="tel:5555550193">(555) 555-0193</a></p><p><a href="mailto:hello@foundrystrength.example">hello@foundrystrength.example</a></p></div>
+    <div class="rv"><h4>Open</h4><p class="hrs"><span>Monday to Friday</span><span>5:30am to 8:30pm</span></p><p class="hrs"><span>Saturday</span><span>7:00am to 2:00pm</span></p><p class="hrs"><span>Sunday</span><span>8:00am to 12:00pm</span></p></div>
+  </div>
+  <p style="margin-top:2rem"><a class="btn flame" href="tel:5555550193">Book a free first class</a></p>
+  <p style="font-size:.76rem;color:rgba(255,255,255,.6);margin-top:1rem">Demo booking. In production the schedule and spot counts come live from Mindbody, Wodify or Momence, and this button opens their booking flow.</p>
+</div></section>
+
+</main>
+
+<div class="demo-foot">Demo site. Foundry is a fictional gym, built to show what a small-business site can do.
+  <a href="https://tahvia127.github.io/framework-studio/" target="_blank" rel="noopener noreferrer">Made by Framework Studio</a></div>
+<footer><div class="shell">
+  <span>&copy; <span id="yr">2026</span> Foundry Strength &amp; Conditioning</span>
+  <span>1820 S Halsted St, Chicago, IL 60608</span>
+  <span><a href="tel:5555550193">(555) 555-0193</a></span>
+</div></footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var nav=document.getElementById('nav');
+addEventListener('scroll',function(){nav.classList.toggle('stuck',scrollY>12)},{passive:true});
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.05});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+
+/* schedule filter */
+var sessions=[].slice.call(document.querySelectorAll('.sess')),
+    fbtns=document.querySelectorAll('.fbtn'), count=document.getElementById('schedCount');
+function paintCount(){
+  var vis=sessions.filter(function(s){return !s.hidden}).length;
+  count.textContent = vis + (vis===1?' class':' classes') + ' this week';
+  document.querySelectorAll('.day').forEach(function(day){
+    var any=[].slice.call(day.querySelectorAll('.sess')).some(function(s){return !s.hidden});
+    day.querySelector('.none').hidden = any;
+  });
+}
+fbtns.forEach(function(b){ b.addEventListener('click',function(){
+  fbtns.forEach(function(o){o.setAttribute('aria-pressed',String(o===b))});
+  var f=b.dataset.f;
+  sessions.forEach(function(s){ s.hidden = !!f && s.dataset.c!==f });
+  paintCount();
+})});
+paintCount();
+
+/* monthly / annual */
+var DISC=0.15, tiers=document.querySelectorAll('.tier'),
+    tbtns=document.querySelectorAll('.toggle button');
+function price(annual){
+  tiers.forEach(function(t){
+    var base=+t.dataset.monthly, one=t.dataset.oneoff==='1';
+    var v = (annual && !one) ? Math.round(base*(1-DISC)) : base;
+    t.querySelector('.amt').textContent=v;
+    var save=t.querySelector('.save');
+    save.textContent = (annual && !one) ? 'Save $'+((base-v)*12)+' a year' : '';
+  });
+}
+tbtns.forEach(function(b){ b.addEventListener('click',function(){
+  tbtns.forEach(function(o){o.setAttribute('aria-pressed',String(o===b))});
+  price(b.dataset.p==='annual');
+})});
+price(false);
+</script>
+</body>
+</html>

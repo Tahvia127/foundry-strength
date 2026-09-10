@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{NAME}} {{TAGLINE}} | {{CITY}}</title>
+<meta name="description" content="{{INTRO_SHORT}}">
+<meta property="og:title" content="{{NAME}} — {{TAGLINE}}">
+<meta property="og:description" content="{{INTRO_SHORT}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<a class="skip" href="#schedule">Skip to the schedule</a>
+{{DEMOBAR}}
+
+<header class="nav" id="nav"><div class="shell">
+  <a class="logo" href="#top">Found<span>ry</span></a>
+  <nav aria-label="Primary"><ul>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#membership">Membership</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul></nav>
+  <a class="btn fill" href="#visit">Free first class</a>
+</div></header>
+
+<header class="hero" id="top">
+  <img src="assets/img/hero.webp" alt="" width="1600" height="1067" fetchpriority="high">
+  <div class="inner"><div class="shell">
+    <p class="eyebrow">{{TAGLINE}} &middot; {{CITY}}</p>
+    <h1>Show up. Get coached. Get strong.</h1>
+    <p>{{INTRO}}</p>
+    <div class="cta">
+      <a class="btn flame" href="#visit">Book a free first class</a>
+      <a class="btn light" href="#schedule">See the schedule</a>
+    </div>
+  </div></div>
+</header>
+
+<main>
+
+<section class="section" id="classes"><div class="shell">
+  <div class="head rv">
+    <p class="eyebrow">What we run</p>
+    <h2>Four classes, capped at {{CAP}}</h2>
+    <p>Every session is coached start to finish. Small enough that someone corrects your setup before it becomes a habit.</p>
+  </div>
+  <div class="cls-grid">{{CLASSES}}</div>
+</div></section>
+
+<section class="section section-alt" id="schedule"><div class="shell">
+  <div class="head rv">
+    <p class="eyebrow">This week</p>
+    <h2>The schedule</h2>
+    <p>{{N_SESSIONS}} sessions a week. Filter by class, and check spots before you come down.</p>
+  </div>
+  <div class="sched-bar rv" role="group" aria-label="Filter the schedule by class">
+    {{FILTERS}}
+    <span class="sched-count" id="schedCount" aria-live="polite"></span>
+  </div>
+  <div class="week">{{WEEK}}</div>
+</div></section>
+
+<section class="section"><div class="shell split">
+  <div class="im rv"><img src="assets/img/about.webp" alt="" loading="lazy" width="1100" height="935"></div>
+  <div class="rv">
+    <p class="eyebrow">How it works</p>
+    <h2>Coached, not supervised</h2>
+    <p>There is a difference between a gym with staff and a gym with coaches. Here someone writes your programme, watches you lift it, and changes it when it stops working.</p>
+    <p>Your first class is free and there is no sales conversation afterwards. Come to one, see whether you like the room, and decide then.</p>
+    <a class="btn" href="#visit">Book your first class</a>
+  </div>
+</div></section>
+
+<section class="section section-alt" id="membership"><div class="shell">
+  <div class="head rv">
+    <p class="eyebrow">Membership</p>
+    <h2>Pick how often you'll actually come</h2>
+    <p>Most people overbuy. If you are honest about two sessions a week, the eight-a-month plan is cheaper than unlimited and you will not feel guilty.</p>
+  </div>
+  <div class="toggle rv" role="group" aria-label="Billing period">
+    <button type="button" data-p="monthly" aria-pressed="true">Monthly</button>
+    <button type="button" data-p="annual" aria-pressed="false">Annual &middot; save 15%</button>
+  </div>
+  <div class="tiers">{{TIERS}}</div>
+  <p class="terms">{{TERMS}}</p>
+</div></section>
+
+<section class="section dark" id="visit"><div class="shell">
+  <div class="head rv"><p class="eyebrow">Visit</p><h2>Come down</h2>
+    <p>First class is free, no card needed. Turn up ten minutes early and someone will show you round.</p></div>
+  <div class="info">
+    <div class="rv"><h4>Where</h4><p>{{ADDR1}}<br>{{ADDR2}}</p></div>
+    <div class="rv"><h4>Reach us</h4><p><a href="tel:{{PHONE_RAW}}">{{PHONE}}</a></p><p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p></div>
+    <div class="rv"><h4>Open</h4>{{HOURS}}</div>
+  </div>
+  <p style="margin-top:2rem"><a class="btn flame" href="tel:{{PHONE_RAW}}">Book a free first class</a></p>
+  <p style="font-size:.76rem;color:rgba(255,255,255,.6);margin-top:1rem">Demo booking. In production the schedule and spot counts come live from Mindbody, Wodify or Momence, and this button opens their booking flow.</p>
+</div></section>
+
+</main>
+
+{{DEMOFOOT}}
+<footer><div class="shell">
+  <span>&copy; <span id="yr">2026</span> {{NAME}} {{TAGLINE}}</span>
+  <span>{{ADDR1}}, {{ADDR2}}</span>
+  <span><a href="tel:{{PHONE_RAW}}">{{PHONE}}</a></span>
+</div></footer>
+{{SCRIPT}}
+</body>
+</html>

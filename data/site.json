@@ -1,0 +1,21 @@
+{
+  "name": "Foundry",
+  "tagline": "Strength & Conditioning",
+  "city": "Chicago",
+  "intro": "A coached strength gym in Pilsen. Small classes, real barbells, and a coach who knows your name and your last set. No mirrors wall, no contracts you cannot leave.",
+  "phone": "(555) 555-0193",
+  "email": "hello@foundrystrength.example",
+  "address": { "line1": "1820 S Halsted St", "line2": "Chicago, IL 60608" },
+  "capacity": 16,
+  "hours": [
+    { "days": "Monday to Friday", "time": "5:30am to 8:30pm" },
+    { "days": "Saturday", "time": "7:00am to 2:00pm" },
+    { "days": "Sunday", "time": "8:00am to 12:00pm" }
+  ],
+  "demo": {
+    "show": true,
+    "text": "Demo site. Foundry is a fictional gym, built to show what a small-business site can do.",
+    "linkText": "Made by Framework Studio",
+    "url": "https://tahvia127.github.io/framework-studio/"
+  }
+}
